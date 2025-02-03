@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-wrapper {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url('../images/back.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: rgb(8, 3, 3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    border-radius: 0 0 5px 5px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(119, 119, 119, 0.5);
+    z-index: 1;
+    color: #3a0217;
+    border-radius: 0 0 5px 5px;
+}
+.navbar { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid black;
+   } 
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0 4px 8px rgba(174, 40, 100, 0.144);
+    height: 11vh;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 20; 
+    background-color: #f7d8f116; 
+   /* flex-wrap: wrap; */
+    border: 1px solid red;
+}
+.header .logo {
+    display: flex;
+    /* height: 10vh; */
+}
+
+.header .logo img {
+    width: 200px;
+    margin-top: 0;
+}
+
+.header .nav {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.header .nav a {
+    color: #072542;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+    font-size: 1.1rem;
+}
+
+.header .nav a:hover {
+    color: #75cbea; 
+}
+.buttonSin {
+    margin-top: 20px;
+    padding: 1em 2em;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #6d1047;
+    transition: all 1000ms;
+    font-size: 15px;
+    position: relative;
+    overflow: hidden;
+    outline: 2px solid #76094b;
+    background-color: #f3c8de00;
+  }
+  
+  .buttonSin:hover {
+    color: #3a0217;
+    transform: scale(1.1);
+    outline: 2px solid #ec9bb7;
+    box-shadow: 4px 5px 17px -4px #862852;
+  }
+  
+  .buttonSin::before {
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: #f5c5e0;
+    transform: skewX(45deg);
+    z-index: -1;
+    transition: width 1000ms;
+  }
+  
+  .buttonSin:hover::before {
+    width: 250%;
+  }
+  .overplay{
+    display: flex;
+  justify-content: space-evenly;
+  align-items: center;  
+
+  }
