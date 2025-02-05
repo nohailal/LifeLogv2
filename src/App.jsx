@@ -8,6 +8,7 @@ import SettingsLayout from './components/Settings/SettingsLayout'
 import AccountSettings from './components/Settings/settings/AccountSettings'
 import PrivacySettings from './components/Settings/settings/PrivacySettings'
 import PersonalSettings from './components/Settings/settings/PersonalSettings'
+import TodoListApp from './pages/todoList';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="privacy" element={<PrivacySettings />} />
           <Route path="personal" element={<PersonalSettings />} />
         </Route>
+        <Route path="/todo-list" element={<TodoListApp />} />
       </Routes>
     </BrowserRouter>
   )
