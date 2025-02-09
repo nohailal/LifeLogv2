@@ -11,7 +11,7 @@ export default function TodoListApp() {
   const [darkMode, setDarkMode] = useState(false);
 
   return (
-    <div className={`min-h-screen ${darkMode ? 'dark bg-gray-900' : 'bg-rose-50'}`}>
+    <div className={`min-h-screen `}>
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}

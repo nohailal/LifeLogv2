@@ -71,7 +71,7 @@ const useCalendarStats = (history, date) => {
   }, [history, date]);
 };
 
-export default function HistoryCalendar({ history }) {
+export default function HistoryCalendar({ history = [] }) {
   const [date, setDate] = useState(new Date());
   const stats = useCalendarStats(history, date);
   
@@ -118,10 +118,9 @@ export default function HistoryCalendar({ history }) {
             date={date}
             onChange={setDate}
             dayContentRenderer={dayContentRenderer}
-            className="border-rose-900 rounded-lg"
+            className="border-rose-300 rounded-lg"
             color="#fb7185"
             rangeColors={['#fb7185']}
-            
             showMonthAndYearPickers={true}
             aria-label="Activity calendar"
           />
@@ -186,7 +185,9 @@ export default function HistoryCalendar({ history }) {
 const StatItem = ({ label, value }) => (
   <div>
     <p className="text-rose-600/70 text-sm">{label}</p>
-    <p className="text-lg font-semibold text-rose-700">{value}</p>
+    <p className="text-lg font-semibold text-rose-700">
+      {value}
+    </p>
   </div>
 );
 
