@@ -9,6 +9,7 @@ import AccountSettings from './components/Settings/settings/AccountSettings'
 import PrivacySettings from './components/Settings/settings/PrivacySettings'
 import PersonalSettings from './components/Settings/settings/PersonalSettings'
 import TodoListApp from './pages/todoList';
+import ContactUS from './pages/contact'
 
 function App() {
   return (
@@ -23,6 +24,8 @@ function App() {
           <Route path="account" element={<AccountSettings />} />
           <Route path="privacy" element={<PrivacySettings />} />
           <Route path="personal" element={<PersonalSettings />} />
+          <Route path="contact-us" element={<ContactUS />} />
+
         </Route>
         <Route path="/todo-list" element={<TodoListApp />} />
       </Routes>

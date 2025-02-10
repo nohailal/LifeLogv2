@@ -1,4 +1,4 @@
-import React from "react";
+
 import { motion } from "framer-motion";
 import { Facebook, Twitter, Inbox } from 'lucide-react';
 import Logo from '../../images/logo.png';
@@ -8,10 +8,9 @@ function Footer() {
         {
             label: "Our Team",
             items: [
-                { name: 'Partners' },
-                { name: 'Blog' },
                 { name: 'Team' },
-                { name: 'Careers' },
+                { name: 'Blog' },
+                
             ],
         },
         {
@@ -19,15 +18,11 @@ function Footer() {
             items: [
                 { name: 'Contact' },
                 { name: 'Support' },
-                { name: 'Docs' },
-                { name: 'Pricing' },
             ],
         },
         {
             label: "About",
             items: [
-                { name: 'Terms' },
-                { name: 'License' },
                 { name: 'Privacy' },
                 { name: 'About US' },
             ]

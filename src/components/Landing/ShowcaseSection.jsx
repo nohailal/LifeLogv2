@@ -1,4 +1,4 @@
-import React from "react";
+
 import { motion } from "framer-motion";
 import { Rss, ListTodo, Lock } from "lucide-react";
 
@@ -70,13 +70,13 @@ const ShowcaseSection = () => {
           initial="hidden"
           animate="visible"
         >
-          <motion.ul className="grid gap-6 sm:gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          <motion.ul className="grid gap-6 sm:gap-8 sm:grid-cols-2 lg:grid-cols-3 ">
             {features.map((item, idx) => (
               <motion.li 
                 key={idx}
                 variants={itemVariants}
-                whileHover={{ scale: 1.02, boxShadow: "0 6px 20px rgba(0,0,0,0.08)" }}
-                className="bg-white space-y-3 p-6 rounded-xl border border-gray-100 hover:border-purple-200 transition-all duration-300"
+                whileHover={{ scale: 1.02, boxShadow: "0 6px 20px rgba(27, 26, 26, 0.08)" }}
+                className="bg-pink-100 space-y-3 p-6 rounded-xl border border-gray-100 hover:border-purple-200 transition-all duration-300"
               >
                 {/* Icon */}
                 <motion.div 
