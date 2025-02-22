@@ -10,7 +10,7 @@ import PrivacySettings from './components/Settings/settings/PrivacySettings'
 import PersonalSettings from './components/Settings/settings/PersonalSettings'
 import TodoListApp from './pages/todoList';
 import ContactUS from './pages/contact'
-
+import Blog from './components/blog/blogPage'
 function App() {
   return (
     <BrowserRouter>
@@ -25,9 +25,10 @@ function App() {
           <Route path="privacy" element={<PrivacySettings />} />
           <Route path="personal" element={<PersonalSettings />} />
           <Route path="contact-us" element={<ContactUS />} />
-
+        
         </Route>
         <Route path="/todo-list" element={<TodoListApp />} />
+        <Route path="/blog" element={<Blog />} />
       </Routes>
     </BrowserRouter>
   )
